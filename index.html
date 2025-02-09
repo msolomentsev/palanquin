@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palanquin Power</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'gradient-custom': 'linear-gradient(135deg, rgb(107, 70, 193) 0%, rgb(66, 153, 225) 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gradient-custom text-white flex flex-col items-center p-6">
+    <div class="container max-w-3xl mx-auto">
+        <img src="image.png" alt="Palanquin Power Logo" class="max-w-[300px] h-auto mb-8 mx-auto">
+        <h1 class="text-5xl font-bold mb-4 text-center">Palanquin Power</h1>
+        <p class="text-xl text-center mb-12">Ultra-efficient power conversion solutions for data centers</p>
+
+        <section class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-8">
+            <h2 class="text-3xl font-bold mb-4">Our Innovation</h2>
+            <p class="text-lg mb-8">Led by founder and CEO Michael Solomentsev, we're revolutionizing data center power efficiency through innovative series-connected load technology, achieving 99%+ efficiency in power conversion.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white/15 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold">99%+</h3>
+                    <p>Power Conversion Efficiency</p>
+                </div>
+                <div class="bg-white/15 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold">200B kWh</h3>
+                    <p>US Data Center Power Usage (2022)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-8">
+            <h2 class="text-3xl font-bold mb-4">Our Impact</h2>
+            <p class="text-lg">With data centers consuming approximately 4% of total US electricity generation and AI driving increasing demand, our technology provides a critical solution for sustainable data center operations.</p>
+        </section>
+        
+        <img src="michael.png" alt="Michael Solomentsev" class="max-w-full h-auto mb-8 mx-auto rounded-lg">
+    </div>
+</body>
+</html> 
