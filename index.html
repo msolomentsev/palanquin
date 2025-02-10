@@ -311,6 +311,37 @@
                 padding: 2rem 1rem;
             }
         }
+
+        .supporters {
+            padding: 4rem 2rem;
+            background-color: white;
+        }
+
+        .supporters-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .supporter-logo {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .logo-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -383,6 +414,17 @@
                 </a></h3>
                     <p>Co-Founder & Advisor</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="supporters">
+        <div class="supporters-content">
+            <h2>Supported By</h2>
+            <div class="logo-grid">
+                <img src="images/logos/nrel_logo.jpg" alt="NREL Logo" class="supporter-logo">
+                <img src="images/logos/west-gate-logo-float.jpg" alt="West Gate Logo" class="supporter-logo">
+                <img src="images/logos/utaustinlogo.png" alt="University of Texas Logo" class="supporter-logo">
             </div>
         </div>
     </section>
