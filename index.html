@@ -278,6 +278,39 @@
             position: relative;
             z-index: 2;
         }
+
+        @media screen and (max-width: 768px) {
+            .section-with-image {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+
+            .full-width-image {
+                display: none;
+            }
+
+            .hero-content {
+                text-align: center;
+                padding: 2rem 1rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero {
+                padding: 3rem 1rem;
+            }
+
+            .problems, .features, .about {
+                padding: 2rem 1rem;
+            }
+        }
     </style>
 </head>
 <body>
